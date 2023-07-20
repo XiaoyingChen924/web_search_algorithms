@@ -43,7 +43,7 @@
 /**************************************************************/
 /* main program controls all the action
 */
-#include <search_struct.h>
+#include "snippet.h"
 
 
 int
@@ -63,12 +63,14 @@ main(int argc, char *argv[]) {
         printf("\n");
         printf("======= Stage 1 [para %d; %d words]\n\n",
         para_count, word_count);
+        
         /***********Stage_TWO************/
         n_match = num_match(key_word, num_key_word, para, word_count);
         printf("======= Stage 2 [para %d; %d words; %d matches]\n",
         para_count, word_count, n_match);
         print_para(para, word_count, key_word, num_key_word);
         printf("\n\n");
+        
         /***********Stage_THREE************/
         build_snippet(highest_snippet, para, word_count,
 				key_word, num_key_word);
@@ -77,7 +79,7 @@ main(int argc, char *argv[]) {
     return 0; 
 }
 
-/****************************************************************/
+
 
 
 
