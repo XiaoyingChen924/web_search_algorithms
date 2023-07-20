@@ -1,4 +1,8 @@
 
+/** Implementations for module which specifies the rules for creating the 
+ * term-biased snippets for paragraphs of text
+*/
+
 #include "snippet.h"
 #include <stdio.h>
 #include <stdlib.h>
